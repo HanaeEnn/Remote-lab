@@ -1,0 +1,10 @@
+# AUTOMATION OF LIGHTS
+- id: turn_on_virtual_light
+  alias: "Turn on Virtual Light at 8:00 AM"
+  trigger:
+    platform: time
+    at: "08:00:00"
+  action:
+    service: light.turn_on
+    target:
+      entity_id: light.virtual_light

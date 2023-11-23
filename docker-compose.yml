@@ -1,0 +1,9 @@
+version: '3'
+services:
+  homeassistant:
+    image: homeassistant/home-assistant
+    container_name: home-assistant
+    ports:
+      - "8123:8123"
+    volumes:
+      - C:\Users\Hp\Developper\PFS_RemoteLab\homeassistant_config:/config

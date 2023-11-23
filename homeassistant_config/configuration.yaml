@@ -1,0 +1,20 @@
+#configuration of lights
+light:
+  - platform: template
+    lights:
+      virtual_light:
+        friendly_name: "Virtual Light"
+        turn_on:
+          service: script.turn_on_virtual_light
+        turn_off:
+          service: script.turn_off_virtual_light
+# Loads default set of integrations. Do not remove.
+default_config:
+
+# Load frontend themes from the themes folder
+frontend:
+  themes: !include_dir_merge_named themes
+
+automation: !include automations.yaml
+script: !include scripts.yaml
+scene: !include scenes.yaml

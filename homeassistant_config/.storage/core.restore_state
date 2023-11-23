@@ -1,0 +1,429 @@
+{
+  "version": 1,
+  "minor_version": 1,
+  "key": "core.restore_state",
+  "data": [
+    {
+      "state": {
+        "entity_id": "person.ihe",
+        "state": "unknown",
+        "attributes": {
+          "editable": true,
+          "id": "ihe",
+          "user_id": "221c6682c1f8491a89a0d5fa2f202ae1",
+          "device_trackers": [],
+          "friendly_name": "ihe"
+        },
+        "last_changed": "2023-11-23T10:44:15.851426+00:00",
+        "last_updated": "2023-11-23T10:44:24.603618+00:00",
+        "context": {
+          "id": "01HFXWFTCV0Z0FDT4X53J5K76N",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-11-23T11:06:05.667156+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "script.turn_on_virtual_light",
+        "state": "off",
+        "attributes": {
+          "last_triggered": "2023-11-20T11:05:23.513299+00:00",
+          "mode": "single",
+          "current": 0,
+          "friendly_name": "turn_on_virtual_light"
+        },
+        "last_changed": "2023-11-23T10:44:23.817901+00:00",
+        "last_updated": "2023-11-23T10:44:23.817901+00:00",
+        "context": {
+          "id": "01HFXWFSM952WVZM1YXDG68H81",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-11-23T11:06:05.667156+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "script.turn_off_virtual_light",
+        "state": "off",
+        "attributes": {
+          "last_triggered": "2023-11-20T11:05:22.771120+00:00",
+          "mode": "single",
+          "current": 0,
+          "friendly_name": "turn_off_virtual_light"
+        },
+        "last_changed": "2023-11-23T10:44:23.818361+00:00",
+        "last_updated": "2023-11-23T10:44:23.818361+00:00",
+        "context": {
+          "id": "01HFXWFSMAER1HG243KSQVZ2WQ",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-11-23T11:06:05.667156+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "automation.turn_on_virtual_light_at_8_00_am",
+        "state": "on",
+        "attributes": {
+          "id": "turn_on_virtual_light",
+          "last_triggered": "2023-11-17T07:44:31.534218+00:00",
+          "mode": "single",
+          "current": 0,
+          "friendly_name": "Turn on Virtual Light at 8:00 AM"
+        },
+        "last_changed": "2023-11-23T10:44:23.844508+00:00",
+        "last_updated": "2023-11-23T10:44:23.844508+00:00",
+        "context": {
+          "id": "01HFXWFSN486ECWST8KYMJKHTD",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-11-23T11:06:05.667156+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "tts.google_en_com",
+        "state": "unknown",
+        "attributes": {
+          "friendly_name": "Google en com"
+        },
+        "last_changed": "2023-11-23T10:44:24.398070+00:00",
+        "last_updated": "2023-11-23T10:44:24.398070+00:00",
+        "context": {
+          "id": "01HFXWFT6E680W9GBFAJH9ASES",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-11-23T11:06:05.667156+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.total_energy_kwh",
+        "state": "108.5",
+        "attributes": {
+          "state_class": "total",
+          "unit_of_measurement": "kWh",
+          "device_class": "energy"
+        },
+        "last_changed": "2023-11-23T11:04:24.461544+00:00",
+        "last_updated": "2023-11-23T11:04:24.461544+00:00",
+        "context": {
+          "id": "01HFXXME4DZHYW8JNQN3AWE1RN",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": {
+        "native_value": 108.5,
+        "native_unit_of_measurement": "kWh"
+      },
+      "last_seen": "2023-11-23T11:06:05.667156+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.total_energy_mwh",
+        "state": "0.05425",
+        "attributes": {
+          "state_class": "total",
+          "unit_of_measurement": "MWh",
+          "device_class": "energy"
+        },
+        "last_changed": "2023-11-23T11:04:24.462048+00:00",
+        "last_updated": "2023-11-23T11:04:24.462048+00:00",
+        "context": {
+          "id": "01HFXXME4EX8B1HR1HGN1J14CQ",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": {
+        "native_value": 0.05425000000000004,
+        "native_unit_of_measurement": "MWh"
+      },
+      "last_seen": "2023-11-23T11:06:05.667156+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.total_gas_m3",
+        "state": "5.42500000000001",
+        "attributes": {
+          "state_class": "total",
+          "unit_of_measurement": "m³",
+          "device_class": "gas"
+        },
+        "last_changed": "2023-11-23T11:04:24.462373+00:00",
+        "last_updated": "2023-11-23T11:04:24.462373+00:00",
+        "context": {
+          "id": "01HFXXME4ES5JH4PT5WJ9D9FMB",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": {
+        "native_value": 5.42500000000001,
+        "native_unit_of_measurement": "m³"
+      },
+      "last_seen": "2023-11-23T11:06:05.667156+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.total_gas_ft3",
+        "state": "6.14",
+        "attributes": {
+          "state_class": "total",
+          "unit_of_measurement": "m³",
+          "device_class": "gas"
+        },
+        "last_changed": "2023-11-23T11:04:24.462847+00:00",
+        "last_updated": "2023-11-23T11:04:24.462847+00:00",
+        "context": {
+          "id": "01HFXXME4EEQBM1887Q1VCEGCR",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": {
+        "native_value": 217.0,
+        "native_unit_of_measurement": "ft³"
+      },
+      "last_seen": "2023-11-23T11:06:05.667156+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "stt.demo_stt",
+        "state": "unknown",
+        "attributes": {
+          "friendly_name": "Demo STT"
+        },
+        "last_changed": "2023-11-23T10:44:24.512187+00:00",
+        "last_updated": "2023-11-23T10:44:24.512187+00:00",
+        "context": {
+          "id": "01HFXWFTA0VTAY9WZW0TBX0MRM",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-11-23T11:06:05.667156+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "button.push",
+        "state": "unknown",
+        "attributes": {
+          "friendly_name": "Push"
+        },
+        "last_changed": "2023-11-23T10:44:24.515658+00:00",
+        "last_updated": "2023-11-23T10:44:24.515658+00:00",
+        "context": {
+          "id": "01HFXWFTA3PJ8WJV11G7AE45CG",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-11-23T11:06:05.667156+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "alarm_control_panel.security",
+        "state": "disarmed",
+        "attributes": {
+          "code_format": "number",
+          "changed_by": null,
+          "code_arm_required": true,
+          "friendly_name": "Security",
+          "supported_features": 63
+        },
+        "last_changed": "2023-11-23T10:44:24.516219+00:00",
+        "last_updated": "2023-11-23T10:44:24.516219+00:00",
+        "context": {
+          "id": "01HFXWFTA48QQJTA70KTW4JG39",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-11-23T11:06:05.667156+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "event.push_button_press",
+        "state": "unknown",
+        "attributes": {
+          "event_types": [
+            "pressed"
+          ],
+          "event_type": null,
+          "device_class": "button",
+          "friendly_name": "Push Button press"
+        },
+        "last_changed": "2023-11-23T10:44:24.518233+00:00",
+        "last_updated": "2023-11-23T10:44:24.518233+00:00",
+        "context": {
+          "id": "01HFXWFTA6EZHK5A35KB65XTE1",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": {
+        "last_event_type": null,
+        "last_event_attributes": null
+      },
+      "last_seen": "2023-11-23T11:06:05.667156+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "update.demo_update_no_install",
+        "state": "on",
+        "attributes": {
+          "auto_update": false,
+          "installed_version": "1.0.0",
+          "in_progress": false,
+          "latest_version": "1.0.1",
+          "release_summary": "Awesome update, fixing everything!",
+          "release_url": "https://www.example.com/release/1.0.1",
+          "skipped_version": null,
+          "title": "Awesomesoft Inc.",
+          "entity_picture": "https://brands.home-assistant.io/_/demo/icon.png",
+          "friendly_name": "Demo Update No Install",
+          "supported_features": 0
+        },
+        "last_changed": "2023-11-23T10:44:24.528138+00:00",
+        "last_updated": "2023-11-23T10:44:24.528138+00:00",
+        "context": {
+          "id": "01HFXWFTAGAKXDJRX7VD11D6NS",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-11-23T11:06:05.667156+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "update.demo_no_update",
+        "state": "off",
+        "attributes": {
+          "auto_update": false,
+          "installed_version": "1.0.0",
+          "in_progress": false,
+          "latest_version": "1.0.0",
+          "release_summary": null,
+          "release_url": null,
+          "skipped_version": null,
+          "title": "AdGuard Home",
+          "entity_picture": "https://brands.home-assistant.io/_/demo/icon.png",
+          "friendly_name": "Demo No Update",
+          "supported_features": 11
+        },
+        "last_changed": "2023-11-23T10:44:24.528291+00:00",
+        "last_updated": "2023-11-23T10:44:24.528291+00:00",
+        "context": {
+          "id": "01HFXWFTAGQQP7NQSY21D2G7A8",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-11-23T11:06:05.667156+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "update.demo_add_on",
+        "state": "on",
+        "attributes": {
+          "auto_update": false,
+          "installed_version": "1.0.0",
+          "in_progress": false,
+          "latest_version": "1.0.1",
+          "release_summary": "Awesome update, fixing everything!",
+          "release_url": "https://www.example.com/release/1.0.1",
+          "skipped_version": null,
+          "title": "AdGuard Home",
+          "entity_picture": "https://brands.home-assistant.io/_/demo/icon.png",
+          "friendly_name": "Demo add-on",
+          "supported_features": 11
+        },
+        "last_changed": "2023-11-23T10:44:24.528423+00:00",
+        "last_updated": "2023-11-23T10:44:24.528423+00:00",
+        "context": {
+          "id": "01HFXWFTAG3ENQW67X0TD4Q1TY",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-11-23T11:06:05.667156+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "update.demo_living_room_bulb_update",
+        "state": "on",
+        "attributes": {
+          "auto_update": false,
+          "installed_version": "1.93.3",
+          "in_progress": false,
+          "latest_version": "1.94.2",
+          "release_summary": "Added support for effects",
+          "release_url": "https://www.example.com/release/1.93.3",
+          "skipped_version": null,
+          "title": "Philips Lamps Firmware",
+          "device_class": "firmware",
+          "entity_picture": "https://brands.home-assistant.io/_/demo/icon.png",
+          "friendly_name": "Demo Living Room Bulb Update",
+          "supported_features": 11
+        },
+        "last_changed": "2023-11-23T10:44:24.528639+00:00",
+        "last_updated": "2023-11-23T10:44:24.528639+00:00",
+        "context": {
+          "id": "01HFXWFTAGVYTSXGPYRZX677C2",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-11-23T11:06:05.667156+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "update.demo_update_with_progress",
+        "state": "on",
+        "attributes": {
+          "auto_update": false,
+          "installed_version": "1.93.3",
+          "in_progress": false,
+          "latest_version": "1.94.2",
+          "release_summary": "Added support for effects",
+          "release_url": "https://www.example.com/release/1.93.3",
+          "skipped_version": null,
+          "title": "Philips Lamps Firmware",
+          "device_class": "firmware",
+          "entity_picture": "https://brands.home-assistant.io/_/demo/icon.png",
+          "friendly_name": "Demo Update with Progress",
+          "supported_features": 31
+        },
+        "last_changed": "2023-11-23T10:44:24.528770+00:00",
+        "last_updated": "2023-11-23T10:44:24.528770+00:00",
+        "context": {
+          "id": "01HFXWFTAGM8045GWSNH1218H6",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-11-23T11:06:05.667156+00:00"
+    }
+  ]
+}

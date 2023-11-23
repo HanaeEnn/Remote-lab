@@ -1,0 +1,1 @@
+2023-11-23 10:44:16.023 WARNING (Recorder) [homeassistant.components.recorder.util] The system could not validate that the sqlite3 database at //config/home-assistant_v2.db was shutdown cleanly

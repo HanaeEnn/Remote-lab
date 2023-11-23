@@ -1,0 +1,12 @@
+#turn the virtual lights on
+turn_on_virtual_light:
+  sequence:
+    - service: light.turn_on
+      target:
+        entity_id: light.virtual_light
+#turn the virtual lights off
+turn_off_virtual_light:
+  sequence:
+    - service: light.turn_off
+      target:
+        entity_id: light.virtual_light

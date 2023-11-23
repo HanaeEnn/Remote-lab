@@ -1,0 +1,16 @@
+{
+  "users": [
+    {
+      "id": "student@example.com",
+      "username": "student@example.com",
+      "password": "studentpass",
+      "role": "student"
+    },
+    {
+      "id": "teacher@example.com",
+      "username": "teacher@example.com",
+      "password": "teacherpass",
+      "role": "teacher"
+    }
+  ]
+}

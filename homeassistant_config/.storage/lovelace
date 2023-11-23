@@ -1,0 +1,46 @@
+{
+  "version": 1,
+  "minor_version": 1,
+  "key": "lovelace",
+  "data": {
+    "config": {
+      "title": "Home",
+      "views": [
+        {
+          "path": "default_view",
+          "title": "Home",
+          "cards": [
+            {
+              "type": "entities",
+              "entities": [
+                "person.ihe"
+              ]
+            },
+            {
+              "type": "entities",
+              "entities": [
+                "automation.turn_on_virtual_light_at_8_00_am",
+                "light.virtual_light"
+              ],
+              "footer": {
+                "type": "buttons",
+                "entities": [
+                  {
+                    "entity": "script.turn_on_virtual_light",
+                    "show_icon": true,
+                    "show_name": true
+                  },
+                  {
+                    "entity": "script.turn_off_virtual_light",
+                    "show_icon": true,
+                    "show_name": true
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
