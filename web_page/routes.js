@@ -3,20 +3,20 @@ const router = express.Router();
 const path = require('path');
 
 
-//route to the first authentification page
+//route to the authentification page 
 router.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, '../web_page', 'index.html'));
-  const path = require('path');
+  console.log('showing html authentification page')
 });
 
-//
+//route to the student page
 router.post('/student', (req, res) => {
-  // Handle login logic
+  // Handle student page
 });
 
-//
+//route to the teachers page
 router.get('/teacher', (req, res) => {
-  // Handle dashboard logic
+  // Handle teachers page
 });
 
 module.exports = router;
