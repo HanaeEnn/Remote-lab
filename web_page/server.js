@@ -1,31 +1,72 @@
-const fs = require('fs');
-const path = require('path');
+const express = require('express');
+const passport = require('passport');
+const LocalStrategy = require('passport-local').Strategy;
+const session = require('express-session');
 
-// Load user data from the JSON file
-const userDataPath = path.join(__dirname, 'users.json');
-const userData = JSON.parse(fs.readFileSync(userDataPath, 'utf-8'));
+const app = express();
+const port = 3000;
 
-// ...
+// Middleware to parse JSON and handle URL-encoded form data
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
 
-// Passport configuration
-passport.use(new LocalStrategy(
-  (username, password, done) => {
-    // Check username and password against user data
-    const user = userData.users.find(u => u.username === username && u.password === password);
-    if (user) {
-      return done(null, user);
-    } else {
-      return done(null, false, { message: 'Incorrect credentials' });
-    }
-  }
-));
+// Add express-session middleware
+app.use(
+  session({
+    secret: 'your-secret-key', // Change this to a secure key
+    resave: false,
+    saveUninitialized: true,
+  })
+);
 
+// Initialize Passport and session
+app.use(passport.initialize());
+app.use(passport.session());
+
+// Passport local strategy for authentication
+passport.use(
+  new LocalStrategy({ usernameField: 'email' }, (email, password, done) => {
+    // Replace this with your actual authentication logic
+    // For now, let's authenticate any user with any password
+    return done(null, { email });
+  })
+);
+
+// Serialize user into the session
 passport.serializeUser((user, done) => {
-  done(null, user.id);
+  done(null, user.email);
 });
 
-passport.deserializeUser((id, done) => {
-  // Fetch user from the user data
-  const user = userData.users.find(u => u.id === id);
+// Deserialize user from the session
+passport.deserializeUser((email, done) => {
+  // Replace this with your actual logic to fetch user from the database
+  // For now, let's use a dummy user object
+  const user = { email };
   done(null, user);
+});
+
+// Routes
+app.get('/', (req, res) => {
+  res.send('Home page');
+});
+
+app.post(
+  '/login',
+  passport.authenticate('local', {
+    successRedirect: '/dashboard',
+    failureRedirect: '/',
+  })
+);
+
+app.get('/dashboard', (req, res) => {
+  // Check if the user is authenticated
+  if (req.isAuthenticated()) {
+    res.send(`Welcome to the dashboard, ${req.user.email}!`);
+  } else {
+    res.redirect('/');
+  }
+});
+
+app.listen(port, () => {
+  console.log(`Server is running on port ${port}`);
 });
