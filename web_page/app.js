@@ -1,13 +1,16 @@
-const express = require('express');
-const passport = require('passport');
-const LocalStrategy = require('passport-local').Strategy;
-const session = require('express-session');
-const routes = require('./routes'); // Import the routes
+const express           = require('express');
+const session           = require('express-session');
+const exphbs            = require('express-handlebars'); //express handlebars
+const mongoose          = require('mongoose');
+const passport          = require('passport');
+const LocalStrategy     = require('passport-local').Strategy;
+const bcrypt            = require('bcrypt'); // hash password 
 
+const routes            = require('./routes'); // Import the routes
+const app               = express();
+const port              = 3000;
+//
 
-
-const app = express();
-const port = 3000;
 
 // Middleware to parse JSON and handle URL-encoded form data
 app.use(express.json());
