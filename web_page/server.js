@@ -2,6 +2,9 @@ const express = require('express');
 const passport = require('passport');
 const LocalStrategy = require('passport-local').Strategy;
 const session = require('express-session');
+const routes = require('./routes'); // Import the routes
+
+
 
 const app = express();
 const port = 3000;
@@ -45,10 +48,6 @@ passport.deserializeUser((email, done) => {
   done(null, user);
 });
 
-// Routes
-app.get('/', (req, res) => {
-  res.send('Home page');
-});
 
 app.post(
   '/login',
@@ -67,6 +66,11 @@ app.get('/dashboard', (req, res) => {
   }
 });
 
+
+// Use the routes
+app.use('/', routes);
+
+//server running on port
 app.listen(port, () => {
   console.log(`Server is running on port ${port}`);
 });
